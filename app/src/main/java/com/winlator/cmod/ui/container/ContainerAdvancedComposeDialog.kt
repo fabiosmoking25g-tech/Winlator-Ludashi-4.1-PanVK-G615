@@ -78,6 +78,8 @@ private val advancedEnvSpecs = mapOf(
     "ZINK_DESCRIPTORS" to AdvancedEnvSpec(AdvancedEnvKind.SELECT, listOf("auto", "lazy", "cached", "notemplates")),
     "ZINK_DEBUG" to AdvancedEnvSpec(AdvancedEnvKind.MULTI, listOf("nir", "spirv", "tgsi", "validation", "sync", "compact", "noreorder")),
     "MESA_SHADER_CACHE_DISABLE" to AdvancedEnvSpec(AdvancedEnvKind.CHECKBOX, listOf("false", "true")),
+    "MESA_DISK_CACHE_SINGLE_FILE" to AdvancedEnvSpec(AdvancedEnvKind.CHECKBOX, listOf("0", "1")),
+    "MESA_SHADER_CACHE_SHOW_STATS" to AdvancedEnvSpec(AdvancedEnvKind.CHECKBOX, listOf("false", "true")),
     "mesa_glthread" to AdvancedEnvSpec(AdvancedEnvKind.CHECKBOX, listOf("false", "true")),
     "WINEESYNC" to AdvancedEnvSpec(AdvancedEnvKind.CHECKBOX, listOf("0", "1")),
     "TU_DEBUG" to AdvancedEnvSpec(AdvancedEnvKind.MULTI, listOf("forcecb", "nocb", "deck_emu", "startup", "nir", "nobin", "sysmem", "gmem", "forcebin", "layout", "noubwc", "nomultipos", "nolrz", "nolrzfc", "perf", "perfc", "flushall", "syncdraw", "push_consts_per_stage", "rast_order", "unaligned_store", "log_skip_gmem_ops", "dynamic", "bos", "3d_load", "fdm", "noconform", "rd")),
